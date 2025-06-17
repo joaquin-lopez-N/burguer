@@ -1,5 +1,8 @@
 /*  estilos genrales */
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -234,51 +237,4 @@ footer a {
   line-height: 1.4;
 }
 
-
-.carousel .card {
-  border: none;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: #fff;
-}
-
-.carousel .card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
-}
-
-/* Imágenes de las sucursales */
-.carousel .card-img-top {
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  height: 180px;
-  object-fit: cover;
-}
-
-/* Títulos */
-.carousel .card-title {
-  font-weight: 600;
-  color: #fc7831;  
-}
-
-/* Texto del cuerpo */
-.carousel .card-body p {
-  font-size: 0.9rem;
-  color: #444;
-  margin-bottom: 0.3rem;
-}
-
-
-.carousel-inner .row > [class*='col-'] {
-  margin-bottom: 1.5rem;
-}
-
-/* Controladores del carousel, para que se vean mejor */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: #fc7832; 
-  border-radius: 70%;
-  padding: 8px;
-}
 
