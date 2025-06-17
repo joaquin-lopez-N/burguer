@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reseñas - Burgers del Bien</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../styles/styles.css" />
+</head>
+<body>
+
+  
+  
+    <header class="index-header">
+      <nav class="navbar navbar-expand-lg bg-warning-subtle">
+        <div class="container">
+          <a class="navbar-brand fw-bold text-dark" href="../index.html">
+            <img
+              src="../assets/Burguer-logo.jpeg"
+              alt="Logo Burgers del Bien"
+              width="40"
+              class="d-inline-block align-text-top"
+            />
+            Burgers del Bien
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav gap-3">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-dark"
+                  href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="./menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="./reservas.html">Reservas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-dark" aria-current="page" href="./reseñas.html">Reseñas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="./sucursales.html">Sucursales</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="contenedor-inferior-header container py-5">
+
+        <h1 class="text-light text-center mb-3">Lo que dicen nuestros clientes</h1>
+        <p class="text-light text-center fs-5">
+          La mejor calidad y sabor se nota en cada mordida. Estas son algunas opiniones reales.
+        </p>
+      </section>
+    </header>
+
+    <main class="container my-5">
+      <h2 class="text-center mb-4" style="color:#b0413e;">Reseñas Destacadas</h2>
+
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <!-- Reseña 1 -->
+        <article class="col">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <h3 class="card-title" style="color:#e07a5f;">María López</h3>
+              <p class="card-text fst-italic">
+                "La Cheese Burga es mi favorita, se nota que la carne es de calidad y la atención es excelente. Volveré seguro."
+              </p>
+              <p class="mb-0 text-muted">⭐⭐⭐⭐⭐</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Reseña 2 -->
+        <article class="col">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <h3 class="card-title" style="color:#e07a5f;">Carlos Ramírez</h3>
+              <p class="card-text fst-italic">
+                "Pedí la Burga Lucifer y me encantó el toque picante, sin ser demasiado fuerte. Excelente experiencia."
+              </p>
+              <p class="mb-0 text-muted">⭐⭐⭐⭐</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Reseña 3 -->
+        <article class="col">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <h3 class="card-title" style="color:#e07a5f;">Lucía Fernández</h3>
+              <p class="card-text fst-italic">
+                "El lugar es muy acogedor y la atención es cálida. La Burga Completa fue un verdadero festín."
+              </p>
+              <p class="mb-0 text-muted">⭐⭐⭐⭐⭐</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+
+     <section class="mt-5">
+  <div class="container">
+    <h3 class="text-center mb-3">¿Querés dejarnos tu opinión?</h3>
+    <form class="row g-3" action="#" method="POST">
+      <div class="col-md-6">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" required>
+        </div>
+        <div class="col-md-6">
+          <label for="puntuacion" class="form-label">Puntuación</label>
+          <select class="form-select" id="puntuacion" required>
+            <option selected disabled value="">Elegí una opción</option>
+            <option>⭐⭐⭐⭐⭐</option>
+            <option>⭐⭐⭐⭐</option>
+            <option>⭐⭐⭐</option>
+            <option>⭐⭐</option>
+            <option>⭐</option>
+          </select>
+        </div>
+        <div class="col-12">
+          <label for="mensaje" class="form-label">Tu reseña</label>
+          <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-warning">Enviar reseña</button>
+        </div>
+      </form>
+    </section>
+  </main>
+    <footer class="bg-dark text-white text-center py-4">
+      <p class="mb-0">© 2025 Burgers del Bien | El sabor que hace bien 🍔</p>
+    </footer>
+
+   
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
