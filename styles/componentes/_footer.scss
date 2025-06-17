@@ -1,0 +1,21 @@
+/* footer estilos */
+footer {
+  background-color: $color-principal;
+  color: $color-blanco;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  position: relative;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+ color: $color-blanco;
+  margin: 0 0.5rem;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
